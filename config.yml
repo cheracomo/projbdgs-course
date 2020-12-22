@@ -1,0 +1,20 @@
+title: ProjBDGS
+description: >-
+  O projeto objetiva criar uma base de dados para agricultura familiar, no
+  sentido de fornecer sistemas de cultivo mais apropriados e resilientes, dado
+  uma posição geográfica, tipo de solo e preferência do agricultor(a) por certa
+  cultura
+template:
+  repo: projbdgs-template
+  name: projbdgs
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
